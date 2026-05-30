@@ -1,10 +1,12 @@
 export type Project = {
   title: string;
   description: string;
+  impact?: string;
   techStack: string[];
   githubUrl?: string;
   liveUrl?: string;
   logo?: string;
+  screenshots?: string[];
 };
 
 export type ExperienceItem = {
@@ -27,6 +29,11 @@ export const siteConfig = {
   upwork: "https://www.upwork.com/freelancers/~018ad80694b0cfd6f3",
   resume: "/kishor-gc-cv.pdf",
   heroImage: "/kishor-gc-coat-image.png",
+  highlights: [
+    { label: "Years Experience", value: "3+" },
+    { label: "Projects Completed", value: "20+" },
+    { label: "Businesses Supported", value: "8+" },
+  ],
 };
 
 export const skillCategories = [
@@ -60,68 +67,81 @@ export const projects: Project[] = [
   {
     title: "ERP System (Final Year Project)",
     description:
-      "Developed a comprehensive ERP platform for small businesses using Laravel, PHP, and MySQL with inventory management, authentication, dashboards, and process automation.",
+      "Developed a full ERP platform for small businesses with inventory, authentication, workflow automation, and executive dashboards to replace manual tracking.",
+    impact: "Reduced repetitive ops work and improved reporting speed with centralized business data.",
     techStack: ["Laravel", "PHP", "MySQL"],
     githubUrl: "https://github.com/MinetaKun/felt_erp/tree/kishorrr",
   },
   {
     title: "Bookmandu Library Management System",
     description:
-      "Built a .NET-based library management application with book cataloging, borrowing and returns, fines calculation, and admin controls backed by PostgreSQL.",
+      "Built a .NET library management system with cataloging, issue/return workflows, fines logic, and admin controls backed by PostgreSQL.",
+    impact: "Improved record accuracy and reduced turnaround time for borrower operations.",
     techStack: [".NET", "PostgreSQL", "C#"],
     githubUrl: "https://github.com/kis-hor/Bookmandu",
   },
   {
     title: "Income Expense Tracker",
     description:
-      "Created a .NET personal finance app for transaction logging, expense categories, reports, and budget charts with CSV-backed persistence.",
+      "Created a finance tracker with transaction logs, category-level insights, budget charts, and export-ready reporting.",
+    impact: "Enabled faster financial reviews and clearer month-to-month spending patterns.",
     techStack: [".NET", "C#", "CSV"],
     githubUrl: "https://github.com/MinetaKun/22067495-Kishor-GC-Income-Expense-Tracking-System",
   },
   {
     title: "Ecommerce Website (MVC Web App)",
     description:
-      "Designed a Java MVC e-commerce web app for washing machines with product listing, cart flow, account support, and payment integration simulation.",
+      "Designed a Java MVC e-commerce web app with product listings, cart flow, account support, and checkout simulation.",
+    impact: "Strengthened conversion flow design by improving product discovery and purchase-path structure.",
     techStack: ["Java MVC", "MySQL", "JSP"],
     githubUrl: "https://github.com/kis-hor/BubblesandWhirls",
   },
   {
     title: "ImageForge",
     description:
-      "Built an image optimization and conversion tool supporting JPG, PNG, and WebP with lossless compression for faster pages and better e-commerce performance.",
+      "Built an image optimization and conversion platform for JPG, PNG, and WebP with quality controls and automated compression workflows.",
+    impact: "Improved page speed potential and Core Web Vitals readiness for e-commerce and content-heavy sites.",
     techStack: ["Next.js", "TypeScript", "Node.js", "SEO"],
     githubUrl: "https://github.com/kis-hor/image-forge",
   },
   {
     title: "Felt & Yarn",
     description:
-      "E-commerce execution and improvements for a PrestaShop-based storefront with operational and merchandising support.",
+      "Led PrestaShop storefront execution across catalog quality, SEO content, and onsite merchandising for export-focused product lines.",
+    impact: "Helped increase qualified organic traffic and conversion consistency through better listing and funnel quality.",
     techStack: ["PrestaShop", "Technical SEO", "Copywriting"],
     liveUrl: "https://feltandyarn.com",
     logo: "/fny-logo.jpg",
+    screenshots: ["/felt-yarn-website.png", "/felt-yarn-etsy.png"],
   },
   {
     title: "Whiskers Home",
     description:
-      "Shopify store optimization focused on product discoverability, listing quality, and conversion-friendly storefront updates.",
+      "Optimized a Shopify store through structure updates, listing improvements, and conversion-oriented UX refinements.",
+    impact: "Improved user journey clarity, product discoverability, and sales-readiness of landing and collection pages.",
     techStack: ["Shopify", "Liquid", "Analytics"],
     liveUrl: "https://whiskershome.com",
     logo: "/whiskers-home-logo.avif",
+    screenshots: ["/whiskers-home-website.png"],
   },
   {
     title: "Go Get Nepal",
     description:
-      "WordPress website enhancements with content structure improvements, SEO setup, and practical speed optimization.",
+      "Enhanced a WordPress business site with SEO-ready architecture, improved content hierarchy, and performance-focused cleanup.",
+    impact: "Increased crawl clarity, improved engagement signals, and supported steady organic visibility gains.",
     techStack: ["WordPress", "PHP", "Technical SEO"],
     liveUrl: "https://gogetnepal.com",
     logo: "/go-get-nepal-logo.webp",
+    screenshots: ["/gogetnepal-website.png"],
   },
   {
     title: "Maata Banasthali Production Management System",
     description:
-      "Refactored and enhanced an internal production management system using MVC with PHP and MySQL to improve maintainability and scalability.",
+      "Owned and enhanced a production management system using Core PHP MVC and MySQL, including modules for reports, dashboards, and transaction workflows.",
+    impact: "Handled PMS operations end-to-end, including petty cash tracking, algorithmic calculations, and management-ready reporting.",
     techStack: ["PHP", "MySQL", "MVC"],
     githubUrl: "https://github.com/kis-hor/maata_banasthali_pms",
+    screenshots: ["/maata-banasthali-pms.png"],
   },
 ];
 

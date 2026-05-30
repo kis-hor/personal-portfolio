@@ -28,9 +28,18 @@ export function HeroSection() {
           <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">{siteConfig.name}</h1>
           <p className="mt-4 max-w-3xl text-lg text-[var(--muted)] md:text-xl">{siteConfig.title}</p>
           <p className="mt-6 max-w-2xl text-[var(--muted)]">
-            I build scalable products across web, e-commerce, and AI while combining technical SEO and conversion-focused
-            copy for measurable growth.
+            I build growth-ready products across web, e-commerce, and AI with measurable outcomes in conversion, traffic,
+            Core Web Vitals, and revenue-focused digital operations.
           </p>
+        </AnimatedReveal>
+
+        <AnimatedReveal delay={0.07} className="mt-7 grid gap-3 sm:grid-cols-3">
+          {siteConfig.highlights.map((metric) => (
+            <div key={metric.label} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4">
+              <p className="text-2xl font-semibold text-[var(--primary)]">{metric.value}</p>
+              <p className="mt-1 text-xs uppercase tracking-wide text-[var(--muted)]">{metric.label}</p>
+            </div>
+          ))}
         </AnimatedReveal>
 
         <AnimatedReveal delay={0.1} className="mt-8 flex flex-wrap gap-3">
