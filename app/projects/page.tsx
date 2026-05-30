@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <SectionWrapper title="Projects" description="Production-oriented work and experiments.">
+    <SectionWrapper title="Projects" description="A structured showcase of development and CMS projects with key work, impact, and direct links.">
       <ProjectsGrid />
     </SectionWrapper>
   );
